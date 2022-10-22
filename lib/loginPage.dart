@@ -1,17 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:grid_view_builder_in_flutter/main.dart';
-import 'package:simple_animations/simple_animations.dart';
+
 class LoginPage extends StatelessWidget {
   const LoginPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return PlayAnimation(
-        tween: ColorTween(begin: Colors.red, end: Colors.blue), // define tween
-        duration: const Duration(seconds: 2),
-      builder: (context, child, value) {
-        return Scaffold(
+   return Scaffold(
           body: Container(
             width: double.infinity,
             decoration: const BoxDecoration(
@@ -171,7 +165,5 @@ class LoginPage extends StatelessWidget {
             ),
           ),
         );
-      }
-    );
   }
 }
